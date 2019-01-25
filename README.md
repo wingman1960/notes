@@ -79,3 +79,5 @@ net.inet6.ip6.forwarding=1
 
 #### Caution
 There is the possibility that `pf.conf` will be overriden with updates to the OS. It might be best to create your own pf config file and load them in additon to the main `pf.conf` to prevent this.
+
+anybody else who gets "Rules must be in order" error on a default Yosemite setup, the two lines can be placed immediately after the line: "rdr-anchor "com.apple/*" (note rdr-anchor, not anchor) You can't just append them to the end of the file.
