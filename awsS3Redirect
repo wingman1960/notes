@@ -1,0 +1,12 @@
+<RoutingRules>
+  <RoutingRule>
+      <Condition>          
+          <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+      </Condition>
+      <Redirect>
+          <HttpRedirectCode>307</HttpRedirectCode>
+    <HostName>{domain_name}</HostName>
+          <ReplaceKeyWith>Not-Found</ReplaceKeyWith>
+      </Redirect>
+  </RoutingRule>
+</RoutingRules>
