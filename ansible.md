@@ -3,7 +3,7 @@
 run playbook:
 `ansible-playbook playbook.yml  -i inventory.yaml`
 
-inventory file in yaml:
+Inventory file in yaml:
 ```
 all:
   hosts:
@@ -18,7 +18,7 @@ all:
         ansible_ssh_common_args: "-F ~/.ssh/config host3"
 ```
 
-create user playbook:
+Playbook for create user and authorized key:
 ```
 - hosts: "all"
   connection: "ssh"
