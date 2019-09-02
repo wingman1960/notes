@@ -4,6 +4,7 @@ CREATE USER myuser;
 REVOKE CREATE ON SCHEMA public FROM PUBLIC;
 REVOKE USAGE ON SCHEMA public FROM PUBLIC;
 
+-- create role
 CREATE ROLE readwrite;
 GRANT CONNECT ON DATABASE mydb TO readwrite;
 GRANT USAGE ON SCHEMA public TO readwrite;
